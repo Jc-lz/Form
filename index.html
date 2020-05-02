@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stiles.css">
+</head>
+<body>
+    <header class="container">
+        <h1 id="title">Formulario de satisfacción</h1>
+    </br>
+        <p id="description">En este breve formulario puede dar una opinión sobre el servicio prestado.</p>
+    </header>
+
+    <main class="container">  
+        <div class="pral">
+            <form action="" id="survey-form">
+                <div class="name">
+                <label for="name" id="name-label"> Nombre: </label> 
+                 <input type="text" id="name" name="name" placeholder="Inserte su nombre:" required>  
+                </div>
+
+                <div class="name">
+                <label for="email" id="email-label">Email:</label>
+                 <input type="email" id="email" name="email" placeholder="Inserte su email:" required>
+                </div> 
+
+                <div class="name">
+                <label for="number" id="number-label">Edad:</label> 
+                 <input type="number" id="number" placeholder="Inserte su edad:" min="1" max="99" required> 
+                </div>
+
+                <div class="name">
+                    <p>¿Como califica el serivio prestado?</p>
+                    <select name="select" id="dropdown">
+                        <option id="dropdown" value="pesimo">Pesimo</option>
+                        <option id="dropdown" value="malo">Malo</option>
+                        <option id="dropdown" value="regular">Regular</option>
+                        <option id="dropdown" value="bueno">Bueno</option>
+                        <option id="dropdown" value="excelente">Excelente</option>
+                    </select>
+                </div>
+
+                <div class="name">
+                        <p>¿Recomendaria nuestros servicios?</p>
+                        <input type="radio" name="btn" value="nun"> Nunca 
+                        <input type="radio" name="btn" value="t-vez"> Tal vez
+                        <input type="radio" name="btn" value="siere"> Siempre
+                </div>
+
+                <div class="name">
+                    <p>¿Tomaria nuevamente nuestros servicios?</p>
+                    <input type="checkbox" value="never"> Nunca
+                    <input type="checkbox" value="maybe"> Tal vez
+                    <input type="checkbox" value="yup"> Si
+                    <input type="checkbox" value="yep"> Definitivamente
+                </div>
+
+                <div class="name">
+                    <label for="text-area">Comentarios</label>
+                    <textarea name="text-area" id="text-area" placeholder="¿Algún comentario para agregar?"></textarea>
+                </div>
+
+                <button id="submit">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
